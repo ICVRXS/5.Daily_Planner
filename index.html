@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="resources/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -30,6 +30,20 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+        <div class="row">
+            <p class="hour">9AM</p>
+            <form class="time-block">
+                <input type="text" id="tasks" name="tasks" class="description">
+            </form>
+            <button class="saveBtn">Save</button>
+        </div>
+        <div class="row">
+            <p class="hour">10AM</p>
+            <form class="time-block">
+                <input type="text" id="tasks" name="tasks" class="description">
+            </form>
+            <button class="saveBtn">Save</button>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
