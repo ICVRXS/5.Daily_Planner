@@ -10,4 +10,9 @@ var saveBtn = $("#saveBtn");
 var myTask = $("#my-task");
 
 
-currentDay.append("<p>why is this not working</p>");
+currentDay.append("<p>This is where the date will go</p>");
+
+saveBtn.on("click", function testFunction(event){
+    event.preventDefault();
+    console.log("click");
+});
