@@ -5,4 +5,9 @@
     //save buttons which save the text to local storage
 //functionality to change the color of each block according to the time of day
     //change css through js for each hourly interval
-    
+var currentDay = $("#currentDay");
+var saveBtn = $("#saveBtn");
+var myTask = $("#my-task");
+
+
+currentDay.append("<p>why is this not working</p>");
