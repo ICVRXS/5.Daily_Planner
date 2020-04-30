@@ -8,9 +8,11 @@
 var currentDay = $("#currentDay");
 var saveBtn = $("#saveBtn");
 var myTask = $("#my-task");
+var date = moment().date();
 
+moment().format("dddd, MMMM Do YYYY");
 
-currentDay.append("<p>This is where the date will go</p>");
+currentDay.append(date);
 
 saveBtn.on("click", function testFunction(event){
     event.preventDefault();
