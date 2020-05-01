@@ -1,14 +1,13 @@
-//clock to display current day and time
-//blocks for entering text
-    //event listeners for clicks 
-    //ability for user to enter text on-screen
-    //save buttons which save the text to local storage
+//clock to display current day
 //functionality to change the color of each block according to the time of day
     //change css through js for each hourly interval
-var currentDay = $("#currentDay");
-var myTask = $(".my-task");
-var date = moment().date();
 
+//Gets current day on page load and appends to to the currentDay p
+var currentDay = $("#currentDay");
+var date = moment(new Date()).format("dddd, MMMM do, YYYY");
+currentDay.append(date);
+
+//For saving the text and rendering saved text to the page on refresh
 var saveBtn = $(".saveBtn"),
     tasks = JSON.parse(localStorage.getItem("tasks")) || {};
 
@@ -25,7 +24,3 @@ saveBtn.on("click", function(){
     tasks["#task"+buttonHour] = taskValue;
     localStorage.setItem("tasks",JSON.stringify(tasks));
 });
-
-moment().format("dddd, MMMM Do YYYY");
-
-currentDay.append(date);
