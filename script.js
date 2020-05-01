@@ -10,7 +10,13 @@ var myTask = $(".my-task");
 var date = moment().date();
 
 var saveBtn = $(".saveBtn"),
-    tasks = {};
+    tasks = JSON.parse(localStorage.getItem("tasks")) || {};
+
+saveBtn.each(function(){
+    var buttonHour = $(this).data("hour");
+    var taskInput = $("#task-"+buttonHour);
+    taskInput.val(tasks["#task"+buttonHour]);
+});
 
 saveBtn.on("click", function(){
     var buttonHour = $(this).data("hour");
