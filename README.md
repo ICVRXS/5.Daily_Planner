@@ -1,1 +1,7 @@
 # 5.Daily_Planner
+
+Starting this project was a heavy undertaking. In stpite of the concise code, it was daunting figuring out just where to start. I spent a lot of my time reading documentation on Moment.js and figuring out how to just get it in the application. Once I had it displaying simply the number of the calendar day to the HTML, I was satisfied that it at least functioned. Formatting the HTML to fit in the class and id names was another difficult taask because figuring out which names should be where and column sizes lead to a lot of trial and error. I don't think I actually got the HTML looking nice until late on Friday. Once I got the HTML looking correct, I moved on to properly formatting the date display. 
+
+The text area inputs and buttons proved difficult, even with the walkthrough given by Anthony, but again with some trial and error, and sufficient googling, I was able to get them to function, albeit with an HTML page that looked much less complete and far from the example that we were working off. On Friday we formed a study group and bounced off each other for completing our respective codes. We came up with a partiularly useful solve to the issue of how to get the time blocks to recolor themselves according to the hour of the day. The if/else statement we used could be easily refactored to fit with your own personal code with only a couple ID and class selectors being changed.
+
+This project started out very danting and frustrating, but with the collaboration of others, it beame fun and wrapping my head around it became much easier.

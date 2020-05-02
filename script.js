@@ -2,7 +2,7 @@ var currentTime = moment().hour();
 
 //Gets current day on page load and appends to to <p id="currentDay>"
 var currentDay = $("#currentDay");
-var date = moment(new Date()).format("dddd, MMMM do, YYYY");
+var date = moment(new Date()).format("dddd, MMMM Do, YYYY");
 currentDay.append(date);
 
 //For saving the text and rendering saved text to the page on refresh
