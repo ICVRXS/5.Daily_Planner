@@ -1,5 +1,4 @@
-//functionality to change the color of each block according to the time of day
-    //change css through js for each hourly interval
+var currentTime = moment().hour();
 
 //Gets current day on page load and appends to to <p id="currentDay>"
 var currentDay = $("#currentDay");
@@ -24,11 +23,14 @@ saveBtn.on("click", function(){
     localStorage.setItem("tasks",JSON.stringify(tasks));
 });
 
-$('.time-block').each(function() {
-    var hourBlock = $(this);
-    var taskBlock = (".task");
-    if(hourBlock){
-    console.log(hourBlock);
-    $(".task").css({"background-color": "grey"});
+//Changes color according to the hour 
+$(".task").each(function(){
+    var timeBlock = $(this).attr("name");
+    if(timeBlock == currentTime){
+        $(this).addClass("present");
+    }else if(timeBlock <= currentTime){
+        $(this).addClass("past");
+    }else{
+        $(this).addClass("future");
     }
 });
