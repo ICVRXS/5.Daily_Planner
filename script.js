@@ -1,8 +1,7 @@
-//clock to display current day
 //functionality to change the color of each block according to the time of day
     //change css through js for each hourly interval
 
-//Gets current day on page load and appends to to the currentDay p
+//Gets current day on page load and appends to to <p id="currentDay>"
 var currentDay = $("#currentDay");
 var date = moment(new Date()).format("dddd, MMMM do, YYYY");
 currentDay.append(date);
@@ -23,4 +22,13 @@ saveBtn.on("click", function(){
     var taskValue = taskInput.val();
     tasks["#task"+buttonHour] = taskValue;
     localStorage.setItem("tasks",JSON.stringify(tasks));
+});
+
+$('.time-block').each(function() {
+    var hourBlock = $(this);
+    var taskBlock = (".task");
+    if(hourBlock){
+    console.log(hourBlock);
+    $(".task").css({"background-color": "grey"});
+    }
 });
